@@ -1,3 +1,12 @@
 files:
-  - source: '*'
-    translation: /%locale_with_underscore%/%original_path%/%locale_with_underscore%.%file_extension%
+  - source: 'config/*.lang'
+    translation: '/%locale_with_underscore%/%original_path%/%locale_with_underscore%.%file_extension%'
+    # Указываем, что это кастомный формат
+    format: custom
+    # Настройка регулярного выражения для извлечения ключа и значения
+    options:
+      source_string_regex: '^(.+?)=(.+)$'
+      source_key_group: 1
+      source_value_group: 2
+      # Необязательно: если хотите сохранять оригинальные строки без изменений
+      preserve_formatting: true
