@@ -32,6 +32,7 @@ jobs:
           LANG_MAP["da_DK"]="Danish"
           LANG_MAP["de_DE"]="German"
           LANG_MAP["el_GR"]="Greek"
+          LANG_MAP["en_US"]="English"
           LANG_MAP["es_ES"]="Spanish"
           LANG_MAP["fi_FI"]="Finnish"
           LANG_MAP["fr_FR"]="French"
@@ -57,6 +58,7 @@ jobs:
 
           mkdir -p build_artifacts
           ZIP_LIST=""
+          BASE_DIR=$(pwd)
 
           for lang_code in */; do
             lang_code="${lang_code%/}"
@@ -73,21 +75,45 @@ jobs:
               continue
             fi
 
+            # Создаём временную директорию для конвертации
+            TEMP_DIR=$(mktemp -d)
+            mkdir -p "$TEMP_DIR/config"
+            
+            # Копируем файлы и конвертируем .properties в .lang
+            find "$lang_code/config" -type f | while read file; do
+              rel_path="${file#$lang_code/config/}"
+              dest_dir="$TEMP_DIR/config/$(dirname "$rel_path")"
+              mkdir -p "$dest_dir"
+              
+              if [[ "$file" == *.properties ]]; then
+                # Конвертируем .properties в .lang
+                new_file="${rel_path%.properties}.lang"
+                cp "$file" "$dest_dir/$new_file"
+              else
+                # Копируем остальные файлы без изменений
+                cp "$file" "$dest_dir/$(basename "$rel_path")"
+              fi
+            done
+
+            # Упаковываем конвертированные файлы
             zip_path="build_artifacts/${lang_name}.zip"
             (
-              cd "$lang_code"
-              zip -r "../$zip_path" config/ -x "*.git*" "*.DS_Store" "__MACOSX/*"
+              cd "$TEMP_DIR"
+              zip -r "$BASE_DIR/$zip_path" config/ -x "*.git*" "*.DS_Store" "__MACOSX/*"
             )
-            ZIP_LIST="${ZIP_LIST}${zip_path}"$'\n'
+            
+            # Удаляем временную директорию
+            rm -rf "$TEMP_DIR"
+            
+            ZIP_LIST+="$zip_path"$'\n'
           done
 
-          # Убираем пустые строки
-          ZIP_LIST=$(echo "$ZIP_LIST" | sed '/^\s*$/d')
+          # Формируем список ZIP-файлов для релиза
           if [ -z "$ZIP_LIST" ]; then
             echo "zip_files=" >> $GITHUB_OUTPUT
           else
             echo "zip_files<<EOF" >> $GITHUB_OUTPUT
-            echo "$ZIP_LIST" >> $GITHUB_OUTPUT
+            echo -e "$ZIP_LIST" >> $GITHUB_OUTPUT
             echo "EOF" >> $GITHUB_OUTPUT
           fi
         shell: bash
@@ -100,7 +126,6 @@ jobs:
           body: |
             📦 Daily language packs for Minecraft mods  
             🕒 Generated from branch `main` on ${{ github.date }}
-          files: |
-            ${{ steps.zip.outputs.zip_files }}
+          files: ${{ steps.zip.outputs.zip_files }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
