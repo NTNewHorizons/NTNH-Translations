@@ -24,7 +24,7 @@
             <icon>
                 <str>minecraft:clock</str>
             </icon>
-            <str> Minecraft Year {darkaqua}</str>
+            <str> Рік Minecraft {darkaqua}</str>
             <add>
                 <round>
                     <div>
