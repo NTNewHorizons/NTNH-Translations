@@ -75,40 +75,34 @@ jobs:
               continue
             fi
 
-            # Создаём временную директорию для конвертации
+            # Создаём временную директорию
             TEMP_DIR=$(mktemp -d)
-            mkdir -p "$TEMP_DIR/config"
-            
-            # Копируем файлы и конвертируем .properties в .lang
-            find "$lang_code/config" -type f | while read file; do
-              rel_path="${file#$lang_code/config/}"
-              dest_dir="$TEMP_DIR/config/$(dirname "$rel_path")"
-              mkdir -p "$dest_dir"
-              
-              if [[ "$file" == *.properties ]]; then
-                # Конвертируем .properties в .lang
-                new_file="${rel_path%.properties}.lang"
-                cp "$file" "$dest_dir/$new_file"
-              else
-                # Копируем остальные файлы без изменений
-                cp "$file" "$dest_dir/$(basename "$rel_path")"
-              fi
+            CONFIG_SRC="$lang_code/config"
+            CONFIG_DEST="$TEMP_DIR/config"
+
+            # Копируем всё содержимое config/
+            mkdir -p "$CONFIG_DEST"
+            cp -r "$CONFIG_SRC"/. "$CONFIG_DEST" 2>/dev/null || true
+
+            # Конвертируем все .properties в .lang
+            find "$CONFIG_DEST" -type f -name "*.properties" | while read -r f; do
+              mv "$f" "${f%.properties}.lang" 2>/dev/null || true
             done
 
-            # Упаковываем конвертированные файлы
+            # Упаковываем в ZIP
             zip_path="build_artifacts/${lang_name}.zip"
             (
               cd "$TEMP_DIR"
               zip -r "$BASE_DIR/$zip_path" config/ -x "*.git*" "*.DS_Store" "__MACOSX/*"
             )
-            
+
             # Удаляем временную директорию
             rm -rf "$TEMP_DIR"
-            
+
             ZIP_LIST+="$zip_path"$'\n'
           done
 
-          # Формируем список ZIP-файлов для релиза
+          # Записываем список архивов в output
           if [ -z "$ZIP_LIST" ]; then
             echo "zip_files=" >> $GITHUB_OUTPUT
           else
@@ -125,7 +119,7 @@ jobs:
           tag_name: NTNH-Translations-${{ steps.vars.outputs.release_name }}
           body: |
             📦 Daily language packs for Minecraft mods  
-            🕒 Generated from branch `main` on ${{ github.date }}
+            🕒 Generated from branch `main` on ${{ steps.vars.outputs.release_name }}
           files: ${{ steps.zip.outputs.zip_files }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
