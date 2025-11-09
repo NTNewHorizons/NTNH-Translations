@@ -1,0 +1,63 @@
+name: Sync main → master (remove configs, .properties → .lang)
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Запускать ТОЛЬКО из ветки main
+  workflow_dispatch:      # Ручной запуск ТОЛЬКО из main
+
+concurrency:
+  group: sync-main-to-master
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Remove unnecessary files
+        run: |
+          # Удаляем КОНФИГИ, которые не нужны в master
+          if [ -f crowdin.yml ]; then
+            rm crowdin.yml
+            echo "✅ crowdin.yml removed"
+          fi
+
+          # Удаляем ПАПКУ С ВОРКФЛОУ (чтобы избежать рекурсии!)
+          if [ -d .github ]; then
+            rm -rf .github
+            echo "✅ .github folder removed (prevents recursion)"
+          fi
+
+      - name: Rename .properties → .lang
+        run: |
+          shopt -s nullglob
+          while IFS= read -r -d '' file; do
+            new_name="${file%.properties}.lang"
+            mv "$file" "$new_name"
+            echo "🔄 Renamed: $file → $new_name"
+          done < <(find . -type f -name "*.properties" -print0)
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+      - name: Commit and push to master
+        run: |
+          # Создаём ЧИСТУЮ ветку master (без истории)
+          git switch --orphan master
+
+          git add .
+          git commit -m "chore: sync from main [skip ci]" --no-verify
+
+          # Принудительно пушим (ветка master должна быть ПУСТОЙ при первом запуске)
+          git push origin master --force
+          echo "✅ Successfully synced to master"
