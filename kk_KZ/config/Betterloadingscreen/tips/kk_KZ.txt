@@ -14,37 +14,37 @@ Mouse Tweaks көмегімен не істей алатыныңызды тек�
 Adventurer's backpack: біріктірілген қолөнер торы, төсек және сұйықтық қоймасы
 Ластанудан сақ болыңыз!
 Қате таптыңыз ба? Бұл туралы GitHub немесе Discord сайтында хабарлаңыз
-You can bookmark items with NEI ("a" by default)
-It's NEI, not JEI. Use it frequently.
-Your pick is not ready
-Also try GT:NH!
-Put the "Mine" back in Minecraft
-Don't go out at night!
-Abandon all vanilla knowledge all ye who enter here
-Sometimes it's better to flee than fight some mobs
-Sometimes the best combat strategy is "Nigerundayooo!"
-You can power machines by putting a batteries in their energy slots
-Be prepared to take hours to build a single multiblock machine!
-Oil + Thunder = Fire.
-It's aluminIum, not aluminum
-Press F7 to see spots where mobs can spawn!
-Press F9 to see chunk borders!
-Microcrafting is love, microcrafting is life
-If you're making a Project Red system, make sure to use a wall of drawers!
-How many circuits have you crafted in your life?
+Элементтерді NEI арқылы белгілеуге болады (әдепкі бойынша «a»)
+Бұл JEI емес, NEI. Оны жиі қолданыңыз.
+Сіздің таңдауыңыз дайын емес
+Сондай-ақ GT:NH көріңіз!
+«Mine» Minecraft-қа қайта салыңыз
+Түнде сыртқа шықпаңыз!
+Мұнда кіргендердің барлығы ванильді білімнен бас тартыңыз
+Кейде кейбір тобырмен соғысқаннан гөрі қашқан жақсы
+Кейде ең жақсы ұрыс стратегиясы - "Nigerundayooo!"
+Батареяларды қуат ұяларына қою арқылы машиналарды қуаттауға болады
+Бірыңғай multiblock машина жасау үшін бірнеше сағат кетуіне дайын болыңыз!
+Мұнай + Найзағай = Өрт.
+Бұл алюминий, ал алюминий емес.
+Топтар пайда болатын жерлерді көру үшін F7 пернесін басыңыз!
+Бөлшек жиектерін көру үшін F9 пернесін басыңыз!
+Микрокрафтинг - бұл махаббат, микрокрафтинг - бұл өмір
+Егер сіз Project Red жүйесін жасап жатсаңыз, тартпалардың қабырғасын пайдаланыңыз!
+Сіз өміріңізде қанша контур жасадыңыз?
 XAERO's WORLD MAP: PRESS[M]
-sqrt(-1) loves you!
+sqrt(-1) сізді жақсы көреді!
 (MultiMC > Curse) && (Technic > Curse): true
-All you had to do was tho follow the damn quest line, CJ!
-Click on an item in the quest book to show its recipe in NEI
-Why not visit Nuclear Tech? We have... nuclear bombs
-If it's too tedious you're doing it wrong
-Do you also watch your oven while baking food?
-There's always something else you can do while waiting
-Use F3 + S to reload the sound if it's gone
-Life's all about opening issues, not closing them - Rongmario
-Visit r/feedthemems!
-I WANT ROCKET I WANT MOON - St4o
+"All you had to do was tho follow the damn quest line, CJ!"
+NEI-де оның рецептін көрсету үшін квест кітабындағы элементті басыңыз
+Неліктен Nuclear Tech сайтына бармасқа? Бізде бар... ядролық бомбалар
+Егер бұл тым жалықтыратын болса, сіз оны дұрыс істемейсіз
+Сіз тамақ пісіріп жатқанда пешіңізге де назар аударасыз ба?
+Күту кезінде сіз әрқашан басқа нәрсе жасай аласыз
+Дыбыс жоғалып кетсе, оны қайта жүктеу үшін F3 + S пернелерін пайдаланыңыз
+Өмір - бұл мәселелерді жабу емес, ашу - Rongmario
+r/feedthemems сайтына кіріңіз!
+Мен зымыран қалаймын, мен Айды қалаймын - St4o
 Hello @Bufka2011 why did you copied our (GTNH) rules :kekwhat:
 Did you already crafted AE2 system?
 Press O to hide NEI overlay
