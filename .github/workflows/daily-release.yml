@@ -1,0 +1,104 @@
+name: Daily Language Packs Release
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Каждый день в 00:00 UTC
+  workflow_dispatch:     # Ручной запуск через GitHub UI
+
+permissions:
+  contents: write  # Для создания релизов
+
+jobs:
+  build-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up variables
+        id: vars
+        run: |
+          echo "release_name=NTNH-Translations-$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+          echo "build_dir=build_artifacts" >> $GITHUB_OUTPUT
+
+      - name: Create build directory
+        run: mkdir -p ${{ steps.vars.outputs.build_dir }}
+
+      - name: Define language mappings
+        id: langs
+        run: |
+          declare -A LANG_MAP
+          LANG_MAP["af_ZA"]="Afrikaans"
+          LANG_MAP["ar_SA"]="Arabic"
+          LANG_MAP["ca_ES"]="Catalan"
+          LANG_MAP["cs_CZ"]="Czech"
+          LANG_MAP["da_DK"]="Danish"
+          LANG_MAP["de_DE"]="German"
+          LANG_MAP["el_GR"]="Greek"
+          LANG_MAP["en_US"]="English"
+          LANG_MAP["es_ES"]="Spanish"
+          LANG_MAP["fi_FI"]="Finnish"
+          LANG_MAP["fr_FR"]="French"
+          LANG_MAP["he_IL"]="Hebrew"
+          LANG_MAP["hu_HU"]="Hungarian"
+          LANG_MAP["it_IT"]="Italian"
+          LANG_MAP["ja_JP"]="Japanese"
+          LANG_MAP["ko_KR"]="Korean"
+          LANG_MAP["nl_NL"]="Dutch"
+          LANG_MAP["no_NO"]="Norwegian"
+          LANG_MAP["pl_PL"]="Polish"
+          LANG_MAP["pt_BR"]="Portuguese_Brazil"
+          LANG_MAP["pt_PT"]="Portuguese_Portugal"
+          LANG_MAP["ro_RO"]="Romanian"
+          LANG_MAP["ru_RU"]="Russian"
+          LANG_MAP["sr_SP"]="Serbian"
+          LANG_MAP["sv_SE"]="Swedish"
+          LANG_MAP["tr_TR"]="Turkish"
+          LANG_MAP["uk_UA"]="Ukrainian"
+          LANG_MAP["vi_VN"]="Vietnamese"
+          LANG_MAP["zh_CN"]="Chinese_Simplified"
+          LANG_MAP["zh_TW"]="Chinese_Traditional"
+          
+          echo "Detected language folders:"
+          for lang_dir in NTNH-Translations/*/; do
+            lang_code=$(basename "$lang_dir")
+            lang_name="${LANG_MAP[$lang_code]}"
+            
+            if [[ -z "$lang_name" ]]; then
+              echo "⚠️ No mapping for $lang_code - skipping"
+              continue
+            fi
+            
+            echo "Processing $lang_code → $lang_name"
+            
+            # Создаём ZIP с правильной структурой
+            zip_name="${lang_name}.zip"
+            (
+              cd "$lang_dir"
+              zip -r "../../${{ steps.vars.outputs.build_dir }}/$zip_name" config/ -x "*.git*"
+            )
+            echo "✅ Created $zip_name"
+            
+            # Сохраняем имена файлов для релиза
+            echo "ZIP_FILES<<EOF" >> $GITHUB_ENV
+            echo "${{ steps.vars.outputs.build_dir }}/$zip_name" >> $GITHUB_ENV
+            echo "EOF" >> $GITHUB_ENV
+          done
+        shell: bash
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: ${{ steps.vars.outputs.release_name }}
+          tag_name: ${{ steps.vars.outputs.release_name }}
+          body: |
+            Daily language packs for Minecraft mods.
+            Generated from branch `main` on ${{ github.date }}
+            
+            Contains:
+            ${{ env.ZIP_FILES }}
+          files: ${{ env.ZIP_FILES }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
