@@ -1,19 +1,19 @@
-#Tips for the loading screen
-#Thanks to 0lafe, boubou19, chochem, interestingusernam3, glowredman, GTNH-Afx237v7, leagris, Lewissaber, Nvidiot, Regian24, richardhendricks, yukieiji and others for tip suggestions
+#Жүктеу экранына арналған кеңестер
+арқасында Кеңестер үшін 0lafe, boubou19, chochem, interestusernam3, Glowredman, GTNH-Afx237v7, leagris, Lewissaber, Nvidiot, Regian24, richardhendricks, yukieiji және т.б.
 #
 #Maximal characters for a tip: 77 (more can go out of the screen)
 #The line below, including the "#" are 77 chars
-#Adventurer's backpack? Did you mean integrated crafting grid, bed and fluid
+#Adventurer's backpack? Сіз біріктірілген қолөнер торын, төсек пен сұйықтықты айтқыңыз келді ме?
 #
-Got a question? Join our Discord server: discord.gg/wtNVzeE5QB
-You can bind the quests menu to a key, instead of using the book
-Be sure to check out what you can do with Mouse Tweaks
-Build multiblocks within the same chunk!
-Try the Midnight Theme for the questbook
-Literally flint and steel!
-Adventurer's backpack: integrated crafting grid, bed and fluid storage
-Beware of pollution!
-Found a bug? Report it on GitHub or Discord
+Сұрақ бар ма? Біздің Discord серверімізге қосылыңыз: discord.gg/wtNVzeE5QB
+Квесттер мәзірін кітапты пайдаланудың орнына кілтпен байланыстыруға болады
+Mouse Tweaks көмегімен не істей алатыныңызды тексеріңіз
+Бір бөлікте multiblocks құрастырыңыз!
+Квест кітабы үшін түн ортасы тақырыбын қолданып көріңіз
+Шақпақтас пен болат!
+Adventurer's backpack: біріктірілген қолөнер торы, төсек және сұйықтық қоймасы
+Ластанудан сақ болыңыз!
+Қате таптыңыз ба? Бұл туралы GitHub немесе Discord сайтында хабарлаңыз
 You can bookmark items with NEI ("a" by default)
 It's NEI, not JEI. Use it frequently.
 Your pick is not ready
