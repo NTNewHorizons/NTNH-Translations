@@ -1,50 +1,50 @@
-#Tips for the loading screen
-#Thanks to 0lafe, boubou19, chochem, interestingusernam3, glowredman, GTNH-Afx237v7, leagris, Lewissaber, Nvidiot, Regian24, richardhendricks, yukieiji and others for tip suggestions
+#Жүктеу экранына арналған кеңестер
+арқасында Кеңестер үшін 0lafe, boubou19, chochem, interestusernam3, Glowredman, GTNH-Afx237v7, leagris, Lewissaber, Nvidiot, Regian24, richardhendricks, yukieiji және т.б.
 #
 #Maximal characters for a tip: 77 (more can go out of the screen)
 #The line below, including the "#" are 77 chars
-#Adventurer's backpack? Did you mean integrated crafting grid, bed and fluid
+#Adventurer's backpack? Сіз біріктірілген қолөнер торын, төсек пен сұйықтықты айтқыңыз келді ме?
 #
-Got a question? Join our Discord server: discord.gg/wtNVzeE5QB
-You can bind the quests menu to a key, instead of using the book
-Be sure to check out what you can do with Mouse Tweaks
-Build multiblocks within the same chunk!
-Try the Midnight Theme for the questbook
-Literally flint and steel!
-Adventurer's backpack: integrated crafting grid, bed and fluid storage
-Beware of pollution!
-Found a bug? Report it on GitHub or Discord
-You can bookmark items with NEI ("a" by default)
-It's NEI, not JEI. Use it frequently.
-Your pick is not ready
-Also try GT:NH!
-Put the "Mine" back in Minecraft
-Don't go out at night!
-Abandon all vanilla knowledge all ye who enter here
-Sometimes it's better to flee than fight some mobs
-Sometimes the best combat strategy is "Nigerundayooo!"
-You can power machines by putting a batteries in their energy slots
-Be prepared to take hours to build a single multiblock machine!
-Oil + Thunder = Fire.
-It's aluminIum, not aluminum
-Press F7 to see spots where mobs can spawn!
-Press F9 to see chunk borders!
-Microcrafting is love, microcrafting is life
-If you're making a Project Red system, make sure to use a wall of drawers!
-How many circuits have you crafted in your life?
+Сұрақ бар ма? Біздің Discord серверімізге қосылыңыз: discord.gg/wtNVzeE5QB
+Квесттер мәзірін кітапты пайдаланудың орнына кілтпен байланыстыруға болады
+Mouse Tweaks көмегімен не істей алатыныңызды тексеріңіз
+Бір бөлікте multiblocks құрастырыңыз!
+Квест кітабы үшін түн ортасы тақырыбын қолданып көріңіз
+Шақпақтас пен болат!
+Adventurer's backpack: біріктірілген қолөнер торы, төсек және сұйықтық қоймасы
+Ластанудан сақ болыңыз!
+Қате таптыңыз ба? Бұл туралы GitHub немесе Discord сайтында хабарлаңыз
+Элементтерді NEI арқылы белгілеуге болады (әдепкі бойынша «a»)
+Бұл JEI емес, NEI. Оны жиі қолданыңыз.
+Сіздің таңдауыңыз дайын емес
+Сондай-ақ GT:NH көріңіз!
+«Mine» Minecraft-қа қайта салыңыз
+Түнде сыртқа шықпаңыз!
+Мұнда кіргендердің барлығы ванильді білімнен бас тартыңыз
+Кейде кейбір тобырмен соғысқаннан гөрі қашқан жақсы
+Кейде ең жақсы ұрыс стратегиясы - "Nigerundayooo!"
+Батареяларды қуат ұяларына қою арқылы машиналарды қуаттауға болады
+Бірыңғай multiblock машина жасау үшін бірнеше сағат кетуіне дайын болыңыз!
+Мұнай + Найзағай = Өрт.
+Бұл алюминий, ал алюминий емес.
+Топтар пайда болатын жерлерді көру үшін F7 пернесін басыңыз!
+Бөлшек жиектерін көру үшін F9 пернесін басыңыз!
+Микрокрафтинг - бұл махаббат, микрокрафтинг - бұл өмір
+Егер сіз Project Red жүйесін жасап жатсаңыз, тартпалардың қабырғасын пайдаланыңыз!
+Сіз өміріңізде қанша контур жасадыңыз?
 XAERO's WORLD MAP: PRESS[M]
-sqrt(-1) loves you!
+sqrt(-1) сізді жақсы көреді!
 (MultiMC > Curse) && (Technic > Curse): true
-All you had to do was tho follow the damn quest line, CJ!
-Click on an item in the quest book to show its recipe in NEI
-Why not visit Nuclear Tech? We have... nuclear bombs
-If it's too tedious you're doing it wrong
-Do you also watch your oven while baking food?
-There's always something else you can do while waiting
-Use F3 + S to reload the sound if it's gone
-Life's all about opening issues, not closing them - Rongmario
-Visit r/feedthemems!
-I WANT ROCKET I WANT MOON - St4o
+"All you had to do was tho follow the damn quest line, CJ!"
+NEI-де оның рецептін көрсету үшін квест кітабындағы элементті басыңыз
+Неліктен Nuclear Tech сайтына бармасқа? Бізде бар... ядролық бомбалар
+Егер бұл тым жалықтыратын болса, сіз оны дұрыс істемейсіз
+Сіз тамақ пісіріп жатқанда пешіңізге де назар аударасыз ба?
+Күту кезінде сіз әрқашан басқа нәрсе жасай аласыз
+Дыбыс жоғалып кетсе, оны қайта жүктеу үшін F3 + S пернелерін пайдаланыңыз
+Өмір - бұл мәселелерді жабу емес, ашу - Rongmario
+r/feedthemems сайтына кіріңіз!
+Мен зымыран қалаймын, мен Айды қалаймын - St4o
 Hello @Bufka2011 why did you copied our (GTNH) rules :kekwhat:
 Did you already crafted AE2 system?
 Press O to hide NEI overlay

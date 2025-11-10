@@ -24,7 +24,7 @@
             <icon>
                 <str>minecraft:clock</str>
             </icon>
-            <str> Minecraft Year {darkaqua}</str>
+            <str> Рік Minecraft {darkaqua}</str>
             <add>
                 <round>
                     <div>
@@ -41,30 +41,30 @@
                 </round>
                 <num>1</num>
             </add>
-            <str> {white}Day {darkaqua}</str>
+            <str> {white}День {darkaqua}</str>
             <modi>
                 <var>day</var>
                 <num>365</num>
             </modi>
-            <str>{white} Time: {gold}{mctime12} </str>
+            <str>{white} Час: {gold}{mctime12} </str>
             <if>
                 <var>daytime</var>
-                <str>{yellow}(day)</str>
-                <str>{gray}(night)</str>
+                <str>{yellow}(день)</str>
+                <str>{gray}(ніч)</str>
             </if>
         </line>
         <line>
             <icon>
                 <str>HardcoreEnderExpansion:temple_end_portal</str>
             </icon>
-            <str> Dimension: {gold}{dimension} ({dimensionid}) {white}Chunks Loaded: {gold}{loadedchunks}</str>
+            <str> Вимір: {gold}{dimension} ({dimensionid}) {white}Завантажені чанки: {gold}{loadedchunks}</str>
         </line>
         <line>
 			<icon>
 				<str>minecraft:sapling</str>
 				<num>4</num>
 			</icon>
-			<str> Biome: {darkaqua}{biome}</str>
+			<str> Біом: {darkaqua}{biome}</str>
 		</line>
 
 
@@ -73,20 +73,20 @@
                 <str>minecraft:skull</str>
                 <num>4</num>
             </icon>
-            <str> Entities: {gold}{entitiesrendered} {white}Rendered / {gold}{entitiestotal} {white}Loaded  </str>
+            <str> Сутність: {gold}{entitiesrendered} {white}Намальовано / {gold}{entitiestotal} {white}Завантажено  </str>
         </line>
         <line>
             <icon>
                 <str>minecraft:compass</str>
                 <num>0</num>
             </icon>
-            <str> Chunk X: {gold}{chunkx} {white}Z: {gold}{chunkz} {white}Off: {gold}{chunkoffsetx} {white}: {gold}{chunkoffsetz} {white}Y: {gold}{yfeeti} {white}Facing {gold}{finedirection}</str>
+            <str> Чанк X: {gold}{chunkx} {white}Z: {gold}{chunkz} {white}Off: {gold}{chunkoffsetx} {white}: {gold}{chunkoffsetz} {white}Y: {gold}{yfeeti} {white}Дивітся на {gold}{finedirection}</str>
         </line>
         <line>
             <icon>
                 <str>minecraft:torch</str>
             </icon>
-            <str> Light: </str>
+            <str> Освіщення: </str>
             <max>
                 <var>light</var>
                 <num>7.5</num>
@@ -143,7 +143,7 @@
                                 <icon>
                                     <str>hbm:textures/misc/precipitation.png</str>
                                 </icon>
-                                <str> It is {darkaqua}raining{reset} for another {darkgreen}{nextrain}{reset}.</str>
+                                <str> Буде {darkaqua}дощити{reset} ще {darkgreen}{nextrain}{reset}.</str>
                             </concat>
                         </if>
                         <if>
@@ -155,7 +155,7 @@
                                 <icon>
                                     <str>thaumcraft:textures/aspects/aqua.png</str>
                                 </icon>
-                                <str> It is {darkaqua}raining{reset} and {gold}Thundering{reset} for another {darkgreen}{nextrain}{reset}. </str>
+                                <str> {darkaqua}Дощ{reset} і {gold}грім{reset} буде йти іще{darkgreen}{nextrain}{reset}. </str>
                                 <icon>
                                     <str>hbm:textures/misc/precipitation.png</str>
                                 </icon>
@@ -200,7 +200,7 @@
                                 <icon>
                                     <str>hbm:textures/misc/precipitation.png</str>
                                 </icon>
-                                <str> It is {darkaqua}raining{reset}.</str>
+                                <str> Зараз йде {darkaqua}дощ{reset}.</str>
                             </concat>
                         </if>
                         <if>
@@ -212,7 +212,7 @@
                                 <icon>
                                     <str>hbm:textures/misc/precipitation.png</str>
                                 </icon>
-                                <str> It is {darkaqua}raining{reset} and {gold}thundering{reset}. </str>
+                                <str> Зараз {darkaqua}йде дощ{reset} і {gold}йде гроза{reset}. </str>
                                 <icon>
                                     <str>hbm:textures/misc/thunderbolt.png</str>
                                 </icon>
@@ -253,7 +253,7 @@
                                 <icon>
                                     <str>hbm:textures/misc/snow.png</str>
                                 </icon>
-                                <str> It is {darkaqua}Snowing{reset} for another {darkgreen}{nextrain}{reset}.</str>
+                                <str> {darkaqua}Сніг{reset} буде йти іще {darkgreen}{nextrain}{reset}.</str>
                             </concat>
                         </if>
                         <if>
@@ -265,7 +265,7 @@
                                 <icon>
                                     <str>hbm:textures/misc/snow.png</str>
                                 </icon>
-                                <str> It is {darkaqua}Snowing{reset} and {gold}Thundering{reset} for another {darkgreen}{nextrain}{reset}. </str>
+                                <str> {darkaqua}Сніг{reset} і {gold}гроза{reset} будуть йти іще {darkgreen}{nextrain}{reset}. </str>
                                 <icon>
                                     <str>hbm:textures/misc/thunderbolt.png</str>
                                 </icon>
@@ -304,7 +304,7 @@
                                 <icon>
                                     <str>hbm:textures/misc/snow.png</str>
                                 </icon>
-                                <str> It is {darkaqua}snowing{reset}.</str>
+                                <str> Зараз йде {darkaqua}сніг{reset}.</str>
                             </concat>
                         </if>
                         <if>
@@ -316,7 +316,7 @@
                                 <icon>
                                     <str>hbm:textures/misc/snow.png</str>
                                 </icon>
-                                <str> It is {darkaqua}snowing{reset} and {gold}thundering{reset}. </str>
+                                <str> Зараз йде{darkaqua}сніг{reset} і {gold}гроза{reset}. </str>
                                 <icon>
                                     <str>hbm:textures/misc/thunderbolt.png</str>
                                 </icon>
@@ -329,11 +329,11 @@
                 <or>
                     <equal>
                         <var>biome</var>
-                        <str>Storage Cell</str>
+                        <str>Комірка зберігання</str>
                     </equal>
                     <equal>
                         <var>biome</var>
-                        <str>Hot Ocean</str>
+                        <str>Теплий океан</str>
                     </equal>
                     <equal>
                         <var>biome</var>
