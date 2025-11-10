@@ -40,6 +40,7 @@ jobs:
           LANG_MAP["hu_HU"]="Hungarian"
           LANG_MAP["it_IT"]="Italian"
           LANG_MAP["ja_JP"]="Japanese"
+          LANG_MAP["kk_KZ"]="Kazakh"
           LANG_MAP["ko_KR"]="Korean"
           LANG_MAP["nl_NL"]="Dutch"
           LANG_MAP["no_NO"]="Norwegian"
