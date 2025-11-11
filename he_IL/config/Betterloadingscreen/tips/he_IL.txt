@@ -23,7 +23,7 @@ Don't go out at night!
 Abandon all vanilla knowledge all ye who enter here
 Sometimes it's better to flee than fight some mobs
 Sometimes the best combat strategy is "Nigerundayooo!"
-You can power machines by putting a batteries in their energy slots
+ניתן להפעיל מכונות על ידי הכנסת סוללות לחריצי האנרגיה שלהן.
 Be prepared to take hours to build a single multiblock machine!
 Oil + Thunder = Fire.
 It's aluminIum, not aluminum
