@@ -5,7 +5,7 @@
 #The line below, including the "#" are 77 chars
 #Adventurer's backpack? Did you mean integrated crafting grid, bed and fluid
 #
-Got a question? Join our Discord server: discord.gg/wtNVzeE5QB
+В тебе є питання? Join our Discord server: discord.gg/wtNVzeE5QB
 You can bind the quests menu to a key, instead of using the book
 Be sure to check out what you can do with Mouse Tweaks
 Build multiblocks within the same chunk!
