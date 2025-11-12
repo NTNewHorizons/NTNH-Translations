@@ -7,15 +7,49 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write  # Добавлено разрешение для работы с PR
 
 jobs:
   build-release:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Merge PRs from Bufka2011
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            // Получаем все открытые PR в основную ветку
+            const { data: pulls } = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              base: 'main'
+            });
+
+            // Фильтруем PR от Bufka2011 и пытаемся слить
+            for (const pull of pulls) {
+              if (pull.user.login !== 'Bufka2011') continue;
+              
+              try {
+                await github.rest.pulls.merge({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number: pull.number,
+                  merge_method: 'merge'
+                });
+                console.log(`✅ Successfully merged PR #${pull.number}`);
+              } catch (error) {
+                console.log(`⚠️ Failed to merge PR #${pull.number}: ${error.message}`);
+                // Продолжаем выполнение даже при ошибке слияния
+              }
+            }
+
+      - name: Checkout updated repository
         uses: actions/checkout@v4
         with:
           ref: main
+          # Принудительно обновляем код после слияния PR
+          fetch-depth: 0
 
       - name: Set release name
         id: vars
