@@ -137,50 +137,50 @@ NTM: Розширене видання жахливо безконтентне
 Є метеори. Побудуйте дах.
 Подовження доменної печі збільшує швидкість
 Не хочете використовувати відра для води? Використовуйте замість цього нескінченну бочку
-Iron furnaces are more fuel efficient, and don't burn while idle
-Shred wheat to triple your bread
-how many breads have you eaten
-Dyson swarm units decay faster the more of them there are
-Clay is valuable in space!
-Don't land at Y=63 on Moho, Laythe, or Eve!
-Friendly fire will not be tolerated!
-Craft flippers to swim faster
-Press F1 for help
-Bricked furnaces smelt construction materials faster
-Standard boilers may explode when running full
-Unlike standart boilers, industrial boilers will stop when full
-Is your RBMK leaking radiation? Use cover panels
-Flow control pumps can be used to change fluid distribution priority
-Pneumatic pipes move items instantly, and through unloaded chunks
-Fans are activated by redstone and push entities around
-Don't set the microwave to the highest setting
-Fractioning towers connect vertically, stacking them increases throughout
-Fullerite too difficult? Make fine soot with a pyrolysis oven
-Exploration pays off. Who knows what you'll find
-Feeling sick? Check for nearby asbestos
-Need a lot of fuel early on? The nether is full of flaming coal
-Get a gun.
-Alexandrite needs explosives to be mined
-Don't forget your AE2 wireless terminal!
-NTM reactors need LOVE (and coolant)
-Gravity Gun: physics-defying fun!
-Craft a Geiger counter ASAP!
-NEI recipe lookup: hover + R
-Don't anger the Endermen
-AE2 autocrafting is mandatory.
-Infernal Mobs hit HARD
-Sometimes, I dream about cheese.
-Press F1 for help.
-Standard boilers may explode when running full.
-Fluids can be voided with a drainage pipe.
-Drainage pipe may not be too good for the environment, though.
-No, you can't upgrade a damaged pickaxe.
-Foundry casts can be removed with a screwdriver.
-It's all about the game
-Don't forget to clone your orbital station drive!
-Orbital station can't make a trip? Add more engines!
-CO2 scrubbers and algae films can recover O2 continuously in orbit.
-You only need one air vent for breathing unaided.
-You can survive in as little as 0.1atm of pure O2.
-Occasionally Heavy Boots are great in low gravity.
-Craft flippers to swim faster.
+Залізні печі більш економічні з точки зору використання палива та не горять у режимі простою.
+Подрібніть пшеницю, щоб потроїти хліб
+скільки хлібин ти з'їв?
+Ройові одиниці Дайсона розпадаються швидше, чим більше їх
+Глина цінна в космосі!
+Не приземляйтеся на Y=63 на Мохо, Лейт чи Ів!
+Дружній вогонь не буде терпітися!
+Зробіть ласти, щоб плавати швидше
+Натисніть F1 для отримання довідки
+Цегляні печі швидше плавили будівельні матеріали
+Стандартні котли можуть вибухнути, коли працюють на повну потужність.
+На відміну від стандартних котлів, промислові котли зупиняються, коли повністю заповнені.
+Чи ваш РБМК витікає радіацію? Використовуйте облицювальні панелі
+Насоси регулювання потоку можна використовувати для зміни пріоритету розподілу рідини
+Пневматичні труби миттєво переміщують предмети, а також проходять крізь ненавантажені шматки
+Вентилятори активуються редстоуном і розштовхують сутності навколо.
+Не встановлюйте мікрохвильову піч на найвищу потужність
+Фракціонувальні вежі з'єднуються вертикально, їх кількість збільшується по всій поверхні
+Фулерит занадто складний? Зробіть дрібну сажу за допомогою піролізної печі
+Розвідка окупається. Хто знає, що ти знайдеш
+Почуваєтеся хворим? Перевірте наявність азбесту поблизу
+Потрібно багато пального на ранній стадії? Нижній світ повний палаючого вугілля
+Дістань пістолет.
+Для видобутку александриту потрібна вибухівка
+Не забудьте свій бездротовий термінал AE2!
+Реактори NTM потребують ЛЮБОВІ (і теплоносія)
+Гравітаційна гармата: веселощі, що кидають виклик фізиці!
+Зробіть лічильник Гейгера якомога швидше!
+Пошук рецепту NEI: наведіть курсор миші + R
+Не гніви Ендерменів
+Автокрафтинг AE2 є обов'язковим.
+Пекельні моби зазнають СИЛЬНОГО удару
+Іноді мені сниться сир.
+Натисніть F1 для отримання довідки.
+Стандартні котли можуть вибухнути, коли працюють на повну потужність.
+Рідини можна вивести за допомогою дренажної труби.
+Однак дренажна труба може бути не дуже корисною для навколишнього середовища.
+Ні, пошкоджену кирку не можна покращити.
+Ливарні відливки можна видалити викруткою.
+Все зводиться до гри
+Не забудьте клонувати диск вашої орбітальної станції!
+Орбітальна станція не може здійснити політ? Додайте більше двигунів!
+Скрубери CO2 та плівки водоростей можуть безперервно відновлювати O2 на орбіті.
+Вам потрібен лише один вентиляційний отвір для дихання без сторонньої допомоги.
+Ви можете вижити навіть при тиску чистого кисню всього 0,1 атм.
+Іноді важкі чоботи чудово підходять для низької гравітації.
+Зробіть ласти, щоб плавати швидше.
