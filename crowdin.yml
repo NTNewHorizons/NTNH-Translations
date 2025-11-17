@@ -1,9 +1,12 @@
 files:
   - source: /config/**/*.properties
     translation: /%locale_with_underscore%/%original_path%/%locale_with_underscore%.properties
+    escape_special_characters: 0  # This disables the automatic escaping of !, #, =, : characters
   - source: /config/**/*.txt
     translation: /%locale_with_underscore%/%original_path%/%locale_with_underscore%.txt
+    escape_special_characters: 0  # Add this for consistency
   - source: /config/**/*.xml
     translation: /%locale_with_underscore%/%original_path%/InGameInfo.xml
     translate_attributes: 0
     content_segmentation: 0
+    escape_special_characters: 0  # Add this for consistency
