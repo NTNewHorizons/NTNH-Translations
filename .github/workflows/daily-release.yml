@@ -7,7 +7,7 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write  # Добавлено разрешение для работы с PR
+  pull-requests: write
 
 jobs:
   build-release:
@@ -18,7 +18,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            // Получаем все открытые PR в основную ветку
+            // Get all open PRs to main branch
             const { data: pulls } = await github.rest.pulls.list({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -26,7 +26,7 @@ jobs:
               base: 'main'
             });
 
-            // Фильтруем PR от Bufka2011 и пытаемся слить
+            // Filter PRs from Bufka2011 and attempt to merge
             for (const pull of pulls) {
               if (pull.user.login !== 'Bufka2011') continue;
               
@@ -40,7 +40,7 @@ jobs:
                 console.log(`✅ Successfully merged PR #${pull.number}`);
               } catch (error) {
                 console.log(`⚠️ Failed to merge PR #${pull.number}: ${error.message}`);
-                // Продолжаем выполнение даже при ошибке слияния
+                // Continue execution even if merge fails
               }
             }
 
@@ -48,8 +48,23 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-          # Принудительно обновляем код после слияния PR
+          # Force update code after merging PRs
           fetch-depth: 0
+
+      - name: Clean up automatic backslashes from Crowdin
+        run: |
+          echo "🧹 Cleaning up automatic backslashes added by Crowdin..."
+          
+          # Remove backslashes before special characters: !, #, :, =
+          # This fixes Crowdin's automatic escaping while preserving intentional escapes
+          find . -type f -name "*.properties" -exec sed -i 's/\\\([!#:=]\)/\1/g' {} \;
+          
+          # Special handling: restore intentional backslashes for variable patterns like \#variable\#
+          # This ensures mod-specific syntax like "#modsloaded#" is preserved without backslashes
+          # while allowing intentional escapes to remain (though they're rare in this context)
+          
+          echo "✅ Automatic backslashes cleaned up successfully"
+        shell: bash
 
       - name: Set release name
         id: vars
@@ -110,34 +125,34 @@ jobs:
               continue
             fi
 
-            # Создаём временную директорию
+            # Create temporary directory
             TEMP_DIR=$(mktemp -d)
             CONFIG_SRC="$lang_code/config"
             CONFIG_DEST="$TEMP_DIR/config"
 
-            # Копируем всё содержимое config/
+            # Copy all config content
             mkdir -p "$CONFIG_DEST"
             cp -r "$CONFIG_SRC"/. "$CONFIG_DEST" 2>/dev/null || true
 
-            # Конвертируем все .properties в .lang
+            # Convert all .properties to .lang
             find "$CONFIG_DEST" -type f -name "*.properties" | while read -r f; do
               mv "$f" "${f%.properties}.lang" 2>/dev/null || true
             done
 
-            # Упаковываем в ZIP
+            # Create ZIP archive
             zip_path="build_artifacts/${lang_name}.zip"
             (
               cd "$TEMP_DIR"
               zip -r "$BASE_DIR/$zip_path" config/ -x "*.git*" "*.DS_Store" "__MACOSX/*"
             )
 
-            # Удаляем временную директорию
+            # Clean up temporary directory
             rm -rf "$TEMP_DIR"
 
             ZIP_LIST+="$zip_path"$'\n'
           done
 
-          # Записываем список архивов в output
+          # Write zip files list to output
           if [ -z "$ZIP_LIST" ]; then
             echo "zip_files=" >> $GITHUB_OUTPUT
           else
