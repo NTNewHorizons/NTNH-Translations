@@ -77,31 +77,31 @@ PotatOS күлкілі :D
 Кенді өңдеудің ең жақсы тәсілі - Acidizer + Centrifuge
 Кристалданған руда балқыту кезінде сізге 2 құйма береді
 NTM электр пештері міндетті!
-Don't mine coal without breathing protection
-Number One Asbestos Fan
-You can use ingots from different mods in crafting
-She was Nuclear on my Tech until I New Horizons
-Did you already automated food production?
-It's automated, not automized
-Don't forget to feed your cat!
-Minecraft loading can take a while
-World loading can take a while
-It's better to pregen your world
-You can suggest your ideas on NTNH's GitHub repo
-You need help with NTM? Find SavageVegeta on YouTube!
-Do you know math? You'll need it
-2 idiots 1 reactor
-Night is REALLY scary!
-OMGWTF NUCLEAR CREEPER
-Pain-In-The-Ass modpack!
-Hello Mellow!
-Hello HBMTheBobcat!
-Hello DreamMaster!
-Hello JamesH2!
-Hello everyone!
-Explore structures like antennas for early resources  
-Build multiple furnaces to speed up alloy production  
-Sirens are doing UUUUUUUUUAAAAAAAAAAAAAAAAAAAAAAAAUUUUUUUUUUUUUUU
+Тыныс алуды қорғаусыз көмірді өндіруге болмайды
+Бірінші нөмірлі асбест желдеткіші
+Қолөнерде әртүрлі модтардың құймаларын пайдалануға болады
+Мен жаңа көкжиекке шыққанша, ол менің технологиямды ядролық деңгейге жеткізді
+Сіз тамақ өндірісін автоматтандырдыңыз ба?
+Ол автоматтандырылған емес, автоматандырылған
+Мысықты тамақтандыруды ұмытпаңыз!
+Minecraft жүктеуге біраз уақыт кетуі мүмкін
+Әлемді жүктеу біраз уақыт алуы мүмкін
+Өз әлеміңді алдын ала алған дұрыс
+Сіз өз идеяларыңызды NTNH GitHub репосында ұсына аласыз
+Сізге NTM бойынша көмек керек пе? YouTube сайтында SavageVegeta табыңыз!
+Сіз математиканы білесіз бе? Сізге қажет болады
+2 ақымақ 1 реактор
+Түн шынымен қорқынышты!
+OMGWTF ядролық крепер
+Pain-In-The-Ass модпакети!
+Сәлем Mellow!
+Сәлем HBMTheBobcat!
+Сәлем DreamMaster!
+Сәлем JamesH2!
+Барлығына сәлем!
+Алғашқы ресурстарға арналған антенналар сияқты құрылымдарды зерттеңіз  
+Қорытпа өндірісін жылдамдату үшін бірнеше пештер жасаңыз  
+Сиреналар УУУУУУУУУУААААААААААААААААААААААААААААААААУУУУУУУУУУУУУУ
 Monitor reactor temperature to prevent meltdowns  
 Use control rods to adjust RBMK output  
 Ensure cooling systems are functional  
