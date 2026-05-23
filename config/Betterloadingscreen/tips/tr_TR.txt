@@ -74,27 +74,27 @@ She was 'Nuclear' on my 'Tech' until I 'New Horizons'
 Did you already automated food production?
 It's automated, not automized
 Kedini beslemeyi unutma!
-Minecraft loading can take a while
-World loading can take a while
+Minecraft'ın yüklenmesi biraz zaman alabilir
+Dünyanın yüklenmesi biraz zaman alabilir
 You can suggest your ideas on NTNH's GitHub repo!
 You can suggest your ideas on NTNH's Discord!
-You need help with NTM? Find SavageVegeta on YouTube!
-Do you know math? You'll need it
-2 idiots 1 reactor
-Night is REALLY scary!
-OMGWTF NUCLEAR CREEPER
-Pain-In-The-Ass modpack!
-Hello Mellow!
-Hello HBMTheBobcat!
-Hello DreamMaster!
-Hello JamesH2!
-Hello everyone!
+You need help with NTM? YouTube'da SavageVegeta'yı bul!
+Matematik biliyor musun? Buna ihtiyacın olacak
+2 aptal 1 reaktör
+Gece GERÇEKTEN korkunç!
+ANANI AVRADINI NÜKLEER CREEPER
+Göt Ağrısı mod paketi!
+Merhaba Mellow!
+Merhaba HBMTheBobcat!
+Merhaba DreamMaster!
+Merhaba Jamesh2!
+Herkese merhaba!
 Explore structures like antennas for early resources  
 Build multiple furnaces to speed up alloy production  
 Sirens going UUUUUUUUUAAAAAAAAAAAAAAAAAAAAAAAAUUUUUUUUUUUUUUU
-Bro this RBMK is so hot... Nevermind
-Turrets are doing RATATATATATA
-Brother. The darkness is coming.
+Bro this RBMK is so hot... Salla Gitsin
+Taretler RATATATATATA yapıyor
+Dostum. Karanlık geliyor.
 Use HE to RF converters!
 Use RF to HE converters!
 Check the mod’s wiki for detailed information
@@ -106,23 +106,23 @@ Have fun and experiment - NTM offers endless possibilities
 Creepers are TERRIFYING in here
 Also try S.T.A.L.K.E.R. Anomaly GAMMA!
 Also try Factorio!
-Call your mom, make her happy
+Anneni ara, onu mutlu et
 NEI recipe lookup: hover + R
 Standard boilers may explode when running full.
 Fluids can be voided with a drainage pipe.
 Drainage pipe may not be too good for the environment.
 Foundry casts can be removed with a screwdriver.
-It's all about the game
+Hepsi oyunla alakalı
 Craft flippers to swim faster.
 GregTech 6 is peak.
 Supersymmetry is peak.
 bob pls port to 1.20
 1.8.9 port is happening soon trust me guys.
-There's meteors. Build a roof. (#1)
+There's meteors. Çatı inşa et. (#1)
 The blast furnace extension increases speed with the same fuel consumption. (#2)
-Don't want to use buckets for water? Use an infinite barrel instead. (#3)
+Su için kovaları kullanmak istemiyor musun? Use an infinite barrel instead. (#3)
 Iron furnaces are more fuel efficient, and don't burn while idle. (#4)
-Press F1 for help. (#5)
+Yardım için F1 bas. (#5)
 Bricked furnaces smelt construction materials faster, like sand, stone or clay. (#6)
 Standard boilers may explode when running full. Industrial boilers will simply stop. (#7)
 Is your RBMK leaking radiation? Use cover panels. (#8)
@@ -164,6 +164,6 @@ Occasionally Heavy Boots are great in low gravity. (#S10)
 You can survive in as little as 0.1atm of pure O2. (#S11)
 You only need one air vent for breathing unaided. (#S12)
 CO2 scrubbers and algae films can recover O2 continuously in orbit. (#S13)
-Orbital station can't make a trip? Add more engines! (#S14)
+Orbital station can't make a trip? Daha fazla motor! (#S14)
 Don't forget to clone your orbital station drive! (#S15)
 wi wi wi. (#???)
