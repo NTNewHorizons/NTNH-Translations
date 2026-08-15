@@ -15,7 +15,7 @@ concurrency:
 jobs:
   sync:
     name: Sync en_US files from NTNH
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - name: Checkout NTNH-Translations repository
