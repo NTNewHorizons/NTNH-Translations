@@ -311,6 +311,13 @@
         <sub><b>431 words</b></sub>
       </td>
       <td align="center" valign="top">
+        <a href="https://crowdin.com/profile/Alchar1"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/16070608/medium/4ebca41fad482e8b72c8133e31dc72d7_default.png" />
+          <br />
+          <sub><b>Alchar1</b></sub></a>
+        <br />
+        <sub><b>261 words</b></sub>
+      </td>
+      <td align="center" valign="top">
         <a href="https://crowdin.com/profile/NKVDshni"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17283930/medium/b6f99536a90f590e689101c777aa3e48.jpg" />
           <br />
           <sub><b>NKVDshni</b></sub></a>
@@ -342,6 +349,8 @@
         <br />
         <sub><b>126 words</b></sub>
       </td>
+    </tr>
+    <tr>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/eiko0"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17801663/medium/431999895c7c5b1994f1cc5938f82e72.jpg" />
           <br />
@@ -351,8 +360,6 @@
         <br />
         <sub><b>120 words</b></sub>
       </td>
-    </tr>
-    <tr>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/petzoldleos"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17837769/medium/e173083ef4ceb9c552c82d07f5e5e514.jpeg" />
           <br />
@@ -405,23 +412,14 @@
         <br />
         <sub><b>28 words</b></sub>
       </td>
+    </tr>
+    <tr>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/THOMASS47"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17660740/medium/4407c6e60240788cccd492955c334c26.png" />
           <br />
           <sub><b>THOMASS47</b></sub></a>
         <br />
         <sub><b>26 words</b></sub>
-      </td>
-    </tr>
-    <tr>
-      <td align="center" valign="top">
-        <a href="https://crowdin.com/profile/Caduzin"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17019702/medium/17cc546196633a20ee352a515e3ec0df.png" />
-          <br />
-          <sub><b>caduzingamer</b></sub>
-          <br />
-          <sub><b>(Caduzin)</b></sub></a>
-        <br />
-        <sub><b>12 words</b></sub>
       </td>
     </tr>
   </tbody>
