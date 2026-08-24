@@ -1,13 +1,13 @@
-#Tips for the loading screen
-#Thanks to 0lafe, boubou19, chochem, interestingusernam3, glowredman, GTNH-Afx237v7, leagris, Lewissaber, Nvidiot, Regian24, richardhendricks, yukieiji and others for tip suggestions
+#Mẹo cho màn hình chờ
+#Cảm ơn 0lafe, boubou19, chochem, interestingusernam3, glowredman, GTNH-Afx237v7, leagris, Lewissaber, Nvidiot, Regian24, richardhendricks, yukieiji và những người khác vì những gợi ý mẹo
 #
-#Maximal characters for a tip: 77 (more can go out of the screen)
-#The line below, including the "#" is 77 chars
+#Số lượng chữ tối đa cho một mẹo: 77 (nhiều hơn có thể không vào màn hình)
+#Hàng ở dưới, kể cả dấu "#" gồm 77 kí tự
 #Adventurer's backpack? Did you mean integrated crafting grid, bed and fluid
 #
-Got a question? Join our Discord server: discord.gg/wtNVzeE5QB
-You can bind the quests menu to a key, instead of using the book
-Be sure to check out what you can do with Mouse Tweaks
+Có đặt ra một câu hỏi? Hãy vào máy chủ Discord của chúng tôi: discord.gg/wtNVzeE5QB
+Bạn có thể gán bảng chọn nhiệm vụ vào một phím, thay vì sử dụng cuốn sách
+Hãy nhớ kiểm tra bạn có thể làm được gì với Mouse Tweaks
 Literally flint and steel!
 Adventurer's backpack: integrated crafting grid, bed and fluid storage
 Beware of pollution!
