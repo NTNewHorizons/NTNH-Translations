@@ -68,9 +68,9 @@ Bạn có bảo vệ bức xạ trên mình chưa?
 The best way to process ore is Acidizer + Centrifuge
 Crystallized ore gives you 2 ingots when smelting
 NTM's Electric Furnaces are a must!
-Don't mine coal without breathing protection
+Đừng đào than nếu không có bảo vệ đường hô hấp
 Fan Số Một Của Amiăng
-She was 'Nuclear' on my 'Tech' until I 'New Horizons'
+Cô ấy 'Nuclear' vào 'Tech' của tôi cho đến khi tôi 'New Horizons'
 Bạn đã tự động hoá chế biến thức ăn chưa?
 Nó là tự động hoá, không phải được tự động hoá
 Đừng quên cho mèo của bạn ăn!
@@ -103,10 +103,10 @@ Hãy chú ý đến cách hoạt động của sự ô nhiễm - nó ảnh hư�
 Kiểm soát sự ô nhiễm để tránh những vấn đề với những con gián
 Sử dụng tháp muội than để giảm ô nhiễm
 Hãy vui vẻ mà thí nghiệm - NTM đưa ra vô hạn khả năng
-Creepers are TERRIFYING in here
-Also try S.T.A.L.K.E.R. Anomaly GAMMA!
-Also try Factorio!
-Call your mom, make her happy
+Creepers trong đây ĐÁNG SỢ lắm
+Bạn cũng nên thử S.T.A.L.K.E.R. Anomaly GAMMA!
+Bạn cũng nên thử Factorio!
+Gọi mẹ bạn, làm cô ấy vui
 NEI recipe lookup: hover + R
 Standard boilers may explode when running full.
 Fluids can be voided with a drainage pipe.
