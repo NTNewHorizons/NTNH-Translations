@@ -26,7 +26,7 @@
           <br />
           <sub><b>(GamerRabbit22)</b></sub></a>
         <br />
-        <sub><b>10295 words</b></sub>
+        <sub><b>11076 words</b></sub>
       </td>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/Nekrasov.V.O"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/16528063/medium/d4325642df047bb9793b41833b15fadd.png" />
