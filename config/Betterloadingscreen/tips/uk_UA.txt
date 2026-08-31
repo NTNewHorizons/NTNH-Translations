@@ -1,7 +1,7 @@
-#Підказки завантажувального екрану
+#Поради щодо екрана завантаження
 #Дякуємо 0lafe, boubou19, chochem, interestingusernam3, glowredman, GTNH-Afx237v7, leagris, Lewissaber, Nvidiot, Regian24, richardhendricks, yukieiji та іншим за пропозиції підказок
 #
-#Максимальна кількість символів: 77 (більше можливо вийде за екран)
+#Максимальна кількість символів: 77 (більше можливо не влізе в екран)
 #Рядок нижче, включно з "#" містить 77 символів
 #Adventurer's backpack? Did you mean integrated crafting grid, bed and fluid
 #
