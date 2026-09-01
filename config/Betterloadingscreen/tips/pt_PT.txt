@@ -119,7 +119,6 @@ Supersimetria é foda.
 bob por favor faça um port para 1.20
 1.8.9 port is happening soon trust me guys.
 Temos meteoros. Construa um teto. (#1)
-A extensão do alto-forno aumenta a velocidade com o mesmo consumo de combustível. (#2)
 Não quer usar baldes para a água? Então use um barril de água infinita. (#3)
 Fornalhas de ferro tem maior eficiência de combustível e não o queimam quando estão inativas. (#4)
 Press F1 for help. (#5)
