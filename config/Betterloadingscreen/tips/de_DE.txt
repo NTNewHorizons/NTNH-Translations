@@ -9,7 +9,7 @@ Haben Sie eine Frage? Trete unserem Discord Server bei: discord.gg/wtNVzeE5QB
 Du kannst das Questmenü zu einer Taste binden, statt das Buch zu nutzen
 Denk dran nachzuschauen was man mit Mouse Tweaks machen kann
 Das ist Feuerstein und Stahl buchstäblich!
-Adventurer's backpack: integrated crafting grid, bed and fluid storage
+Der Abenteurerrucksack: Integriertes Craftingfeld, Bett und Fluid-Tank
 Achten Sie sich vor Umweltverschmutzung!
 Haben Sie einen Fehler gefunden? Melde Fehler auf GitHub oder Discord
 Du kannst dir in NEI Items merken ("A" normalerweise)
@@ -20,7 +20,7 @@ Lege die "Mine" zurück in Minecraft
 Keine Nachtwanderungen!
 Verzichten Sie auf alle Vanillakentnisse, alle, die hierher kommen
 Manchmal ist Flucht die bessere Option
-Be prepared to take hours to build a single multiblock machine!
+Bereite dich auf Multiblocks vor, die Stunden zum Bauen benötigen!
 Drücke F7, um zu sehen, wo Mobs spawnen können!
 Drücke F9, um Chunkgrenzen zu sehen!
 Mikrocraften ist Liebe, Microcraften ist Leben
@@ -28,7 +28,7 @@ Wie viele Schaltkreise hast du in deinem Leben gefertigt?
 XAERO's WELTKARTE: DRÜCKEN[M]
 sqrt(-1) liebt dich!
 (MultiMC > Curse) && (Technic > Curse): richtig
-All you had to do was to follow the damn quest line, CJ!
+Alles, was wir zu tun hatten, war der verdammten Questlinie zu folgen, CJ!
 
 Warum nicht Nuclear Tech besuchen? Wir haben... Wasserstoffbombe
 Wenn es zu mühsam ist, machst du was falsch
