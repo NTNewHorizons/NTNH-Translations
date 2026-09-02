@@ -238,6 +238,15 @@
     </tr>
     <tr>
       <td align="center" valign="top">
+        <a href="https://crowdin.com/profile/CommandNinja"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17833459/medium/f9a02e0a97ff98dd703fee1ed5949bda.png" />
+          <br />
+          <sub><b>Max Mustermann</b></sub>
+          <br />
+          <sub><b>(CommandNinja)</b></sub></a>
+        <br />
+        <sub><b>557 words</b></sub>
+      </td>
+      <td align="center" valign="top">
         <a href="https://crowdin.com/profile/Svetozaavr"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17848899/medium/a64896ccc48192a01f0290f7dbc6db63_default.png" />
           <br />
           <sub><b>Svetozaavr</b></sub></a>
@@ -266,15 +275,6 @@
           <sub><b>Suciiiiii</b></sub></a>
         <br />
         <sub><b>475 words</b></sub>
-      </td>
-      <td align="center" valign="top">
-        <a href="https://crowdin.com/profile/CommandNinja"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17833459/medium/f9a02e0a97ff98dd703fee1ed5949bda.png" />
-          <br />
-          <sub><b>Max Mustermann</b></sub>
-          <br />
-          <sub><b>(CommandNinja)</b></sub></a>
-        <br />
-        <sub><b>416 words</b></sub>
       </td>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/Error_0804"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/15827421/medium/b2a8a84deb318292e1ac1323a5a2a926.jpeg" />
@@ -359,6 +359,13 @@
         <sub><b>143 words</b></sub>
       </td>
       <td align="center" valign="top">
+        <a href="https://crowdin.com/profile/_Savik"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/16551595/medium/4912598334a668277e454e9fd550db7a.jpeg" />
+          <br />
+          <sub><b>_Savik</b></sub></a>
+        <br />
+        <sub><b>130 words</b></sub>
+      </td>
+      <td align="center" valign="top">
         <a href="https://crowdin.com/profile/Alex6_"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/14881780/medium/b951ed53df012b560385ee8b96e8af2d.jpg" />
           <br />
           <sub><b>Alex6</b></sub>
@@ -403,6 +410,8 @@
         <br />
         <sub><b>70 words</b></sub>
       </td>
+    </tr>
+    <tr>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/SYBAUpls"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17555804/medium/2991dd27ce2e1cdd034ca2d3c6d98d30.png" />
           <br />
@@ -411,17 +420,6 @@
           <sub><b>(SYBAUpls)</b></sub></a>
         <br />
         <sub><b>52 words</b></sub>
-      </td>
-    </tr>
-    <tr>
-      <td align="center" valign="top">
-        <a href="https://crowdin.com/profile/kaf_1984"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17830201/medium/3f3ef0ea79c9cc0d60dd2f84aeb9516f.jpeg" />
-          <br />
-          <sub><b>Kaf</b></sub>
-          <br />
-          <sub><b>(kaf_1984)</b></sub></a>
-        <br />
-        <sub><b>36 words</b></sub>
       </td>
     </tr>
   </tbody>
