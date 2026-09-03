@@ -359,11 +359,11 @@
         <sub><b>143 words</b></sub>
       </td>
       <td align="center" valign="top">
-        <a href="https://crowdin.com/profile/_Savik"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/16551595/medium/4912598334a668277e454e9fd550db7a.jpeg" />
+        <a href="https://crowdin.com/profile/_Savik"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/16551595/medium/ea258863c16ad2dd87fb90258d6590b7.jpg" />
           <br />
           <sub><b>_Savik</b></sub></a>
         <br />
-        <sub><b>130 words</b></sub>
+        <sub><b>134 words</b></sub>
       </td>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/Alex6_"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/14881780/medium/b951ed53df012b560385ee8b96e8af2d.jpg" />
