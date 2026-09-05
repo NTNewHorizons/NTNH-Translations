@@ -345,7 +345,7 @@
           <br />
           <sub><b>_Savik</b></sub></a>
         <br />
-        <sub><b>173 words</b></sub>
+        <sub><b>217 words</b></sub>
       </td>
     </tr>
     <tr>
