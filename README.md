@@ -301,7 +301,7 @@
           <br />
           <sub><b>ayzer.</b></sub></a>
         <br />
-        <sub><b>309 words</b></sub>
+        <sub><b>333 words</b></sub>
       </td>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/Syks"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/15430690/medium/37828ce414bcd9335e2bcaa86c014930.jpeg" />
@@ -359,6 +359,15 @@
         <sub><b>168 words</b></sub>
       </td>
       <td align="center" valign="top">
+        <a href="https://crowdin.com/profile/wirex399"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17872167/medium/afbb73cc6c00df639313d2765a52a1bd.png" />
+          <br />
+          <sub><b>Тимофій Конзера</b></sub>
+          <br />
+          <sub><b>(wirex399)</b></sub></a>
+        <br />
+        <sub><b>162 words</b></sub>
+      </td>
+      <td align="center" valign="top">
         <a href="https://crowdin.com/profile/LordJiriX"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/16932143/medium/f3c6cf61e0e32366d285cd2828100d41_default.png" />
           <br />
           <sub><b>LordJiriX</b></sub></a>
@@ -401,6 +410,8 @@
         <br />
         <sub><b>81 words</b></sub>
       </td>
+    </tr>
+    <tr>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/RX0kas"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/16733639/medium/96b337eae62d1b1dcbf243e96d7bbfb9.png" />
           <br />
@@ -409,17 +420,6 @@
           <sub><b>(RX0kas)</b></sub></a>
         <br />
         <sub><b>70 words</b></sub>
-      </td>
-    </tr>
-    <tr>
-      <td align="center" valign="top">
-        <a href="https://crowdin.com/profile/SYBAUpls"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17555804/medium/2991dd27ce2e1cdd034ca2d3c6d98d30.png" />
-          <br />
-          <sub><b>Vlad Komisar</b></sub>
-          <br />
-          <sub><b>(SYBAUpls)</b></sub></a>
-        <br />
-        <sub><b>52 words</b></sub>
       </td>
     </tr>
   </tbody>
