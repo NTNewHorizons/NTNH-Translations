@@ -217,7 +217,7 @@
           <br />
           <sub><b>FOlkvangrField</b></sub></a>
         <br />
-        <sub><b>628 words</b></sub>
+        <sub><b>665 words</b></sub>
       </td>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/Axeleron"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/15116263/medium/e381ad2a54f8104adf22cada864a8c1b.jpeg" />
