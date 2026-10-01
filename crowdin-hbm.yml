@@ -1,3 +1,4 @@
+preserve_hierarchy: true
 files:
   - source: /config/txloader/forceload/hbm/lang/en_US.properties
     translation: /config/txloader/forceload/hbm/lang/%locale_with_underscore%.properties

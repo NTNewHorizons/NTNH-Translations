@@ -129,9 +129,9 @@ jobs:
         if: steps.source.outputs.changed == 'true' || steps.locales.outputs.changed != ''
         run: npm install -g @crowdin/cli
 
-      # Upload the source first so brand-new en_US keys exist before their translations
+      # Upload the source first so it exists in Crowdin and new en_US keys are known
       - name: Upload en_US source to Crowdin
-        if: steps.source.outputs.changed == 'true'
+        if: steps.source.outputs.changed == 'true' || steps.locales.outputs.changed != ''
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN_2 }}
