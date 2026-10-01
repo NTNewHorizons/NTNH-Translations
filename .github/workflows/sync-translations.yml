@@ -33,6 +33,15 @@ jobs:
           token: ${{ secrets.UNIVERSAL_FINE }}
           fetch-depth: 0
 
+      - name: Checkout HBM source repository (spacetravel-two-pointfive)
+        uses: actions/checkout@v4
+        with:
+          repository: NTNewHorizons/Hbm-s-Nuclear-Tech-GIT
+          ref: spacetravel-two-pointfive
+          path: hbm-source
+          token: ${{ secrets.UNIVERSAL_FINE }}
+          fetch-depth: 0
+
       - name: Configure git
         run: |
           git config user.name "github-actions[bot]"
@@ -111,12 +120,51 @@ jobs:
             fi
           done < <(find "$UPSTREAM_DIR" -type f -print0 2>/dev/null || true)
 
-          # ── 2. Warn about orphaned local en_US files ──
+          # ── 2. Sync the HBM source strings from the Java repository ──
+          # The HBM mod jar ships its own en_US, so NTNH (the pack repo)
+          # intentionally contains no config/.../hbm/lang/en_US.*. It must
+          # therefore be sourced from the mod's source repository instead,
+          # otherwise the Crowdin source file silently drifts.
+          HBM_SRC="hbm-source/src/main/resources/assets/hbm/lang/en_US.lang"
+          HBM_REL="txloader/forceload/hbm/lang/en_US.properties"
+          HBM_TARGET="$WORK_DIR/$HBM_REL"
+
+          if [ ! -f "$HBM_SRC" ]; then
+            echo "::error::HBM source strings not found at $HBM_SRC"
+            exit 1
+          fi
+
+          mkdir -p "$(dirname "$HBM_TARGET")"
+          sed '1s/^\xEF\xBB\xBF//' "$HBM_SRC" | sed 's/\r$//' > "$HBM_TARGET.tmp"
+
+          if [ -f "$HBM_TARGET" ]; then
+            if diff -q "$HBM_TARGET" "$HBM_TARGET.tmp" > /dev/null 2>&1; then
+              rm "$HBM_TARGET.tmp"
+              echo "  = Unchanged: $HBM_REL"
+              unchanged=$((unchanged + 1))
+            else
+              mv "$HBM_TARGET.tmp" "$HBM_TARGET"
+              echo "  ✓ Updated:  $HBM_REL"
+              updated=$((updated + 1))
+            fi
+          else
+            mv "$HBM_TARGET.tmp" "$HBM_TARGET"
+            echo "  ✓ New:      $HBM_REL"
+            new=$((new + 1))
+          fi
+
+          # ── 3. Warn about orphaned local en_US files ──
+          # The HBM source file is sourced from the Java repository, not from
+          # the pack repository, so it is exempt from orphan detection.
           while IFS= read -r -d '' local_file; do
             relpath="${local_file#$WORK_DIR/}"
             basename="$(basename "$local_file")"
 
             if [[ ! "$basename" == en_US.* ]]; then
+              continue
+            fi
+
+            if [ "$relpath" == "$HBM_REL" ]; then
               continue
             fi
 
@@ -138,7 +186,7 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          rm -rf ntnh-upstream
+          rm -rf ntnh-upstream hbm-source
 
           git add config
 
