@@ -134,7 +134,7 @@ jobs:
         if: steps.source.outputs.changed == 'true'
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
-          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN_2 }}
         run: |
           crowdin upload sources \
             -c crowdin-hbm.yml \
@@ -144,7 +144,7 @@ jobs:
         if: steps.locales.outputs.changed != ''
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
-          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN_2 }}
         shell: bash
         run: |
           set -euo pipefail
