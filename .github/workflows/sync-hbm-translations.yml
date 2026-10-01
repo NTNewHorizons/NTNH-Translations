@@ -2,6 +2,16 @@ name: Sync HBM Translations
 
 on:
   workflow_dispatch:
+    inputs:
+      branch:
+        description: Crowdin branch to upload to
+        required: false
+        default: main
+      diagnose_only:
+        description: Only list Crowdin branches/files; do not upload
+        type: boolean
+        required: false
+        default: false
   repository_dispatch:
     types: [hbm-source-updated, hbm-locales-updated]
   schedule:
@@ -18,6 +28,9 @@ jobs:
   sync:
     name: Sync hbm en_US source and import bundled locales
     runs-on: ubuntu-latest
+
+    env:
+      CROWDIN_BRANCH: ${{ inputs.branch || 'main' }}
 
     steps:
       - name: Checkout NTNH-Translations repository
@@ -126,22 +139,41 @@ jobs:
           echo "Changed locales: ${changed[*]:-none}"
 
       - name: Install Crowdin CLI
-        if: steps.source.outputs.changed == 'true' || steps.locales.outputs.changed != ''
+        if: steps.source.outputs.changed == 'true' || steps.locales.outputs.changed != '' || inputs.diagnose_only
         run: npm install -g @crowdin/cli
+
+      - name: Inspect Crowdin project (diagnostic)
+        env:
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN_2 }}
+        run: |
+          set -euo pipefail
+          echo "::group::Branches"
+          curl -s -H "Authorization: Bearer $CROWDIN_PERSONAL_TOKEN" \
+            "https://api.crowdin.com/api/v2/projects/$CROWDIN_PROJECT_ID/branches?limit=100" \
+            | jq -r '.data[]?.data | "\(.id)\t\(.name)"' || true
+          echo "::endgroup::"
+          echo "::group::Source files (no branch)"
+          crowdin file list -c crowdin-hbm.yml --tree --no-progress || true
+          echo "::endgroup::"
+          echo "::group::Source files (branch '$CROWDIN_BRANCH')"
+          crowdin file list -b "$CROWDIN_BRANCH" -c crowdin-hbm.yml --tree --no-progress || true
+          echo "::endgroup::"
 
       # Upload the source first so it exists in Crowdin and new en_US keys are known
       - name: Upload en_US source to Crowdin
-        if: steps.source.outputs.changed == 'true' || steps.locales.outputs.changed != ''
+        if: (steps.source.outputs.changed == 'true' || steps.locales.outputs.changed != '') && !inputs.diagnose_only
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN_2 }}
         run: |
           crowdin upload sources \
+            -b "$CROWDIN_BRANCH" \
             -c crowdin-hbm.yml \
             --no-progress
 
       - name: Upload changed locale translations to Crowdin
-        if: steps.locales.outputs.changed != ''
+        if: steps.locales.outputs.changed != '' && !inputs.diagnose_only
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN_2 }}
@@ -164,12 +196,13 @@ jobs:
           done
 
           crowdin upload translations \
+            -b "$CROWDIN_BRANCH" \
             -c crowdin-hbm.yml \
             --auto-approve-imported \
             --no-progress
 
       - name: Commit and push changes
-        if: steps.source.outputs.changed == 'true' || steps.locales.outputs.changed != ''
+        if: (steps.source.outputs.changed == 'true' || steps.locales.outputs.changed != '') && !inputs.diagnose_only
         shell: bash
         run: |
           set -euo pipefail
