@@ -1,22 +1,22 @@
-name: Import HBM Locale Translations
+name: Sync HBM Translations
 
 on:
   workflow_dispatch:
   repository_dispatch:
-    types: [hbm-locales-updated]
+    types: [hbm-source-updated, hbm-locales-updated]
   schedule:
-    - cron: '45 23 * * *'
+    - cron: '30 23 * * *'
 
 permissions:
   contents: write
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  group: sync-hbm-translations
+  cancel-in-progress: false
 
 jobs:
-  import:
-    name: Push changed bundled hbm locale files into Crowdin
+  sync:
+    name: Sync hbm en_US source and import bundled locales
     runs-on: ubuntu-latest
 
     steps:
@@ -40,8 +40,37 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+      - name: Sync hbm en_US source
+        id: source
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          SRC="hbm-upstream/src/main/resources/assets/hbm/lang/en_US.lang"
+          DST="config/txloader/forceload/hbm/lang/en_US.properties"
+
+          if [ ! -f "$SRC" ]; then
+            echo "::error::Source file not found in HBM mod repo: $SRC"
+            exit 1
+          fi
+
+          mkdir -p "$(dirname "$DST")"
+
+          # Strip BOM and CRLF so the Crowdin source matches the repo format
+          sed '1s/^\xEF\xBB\xBF//' "$SRC" | sed 's/\r$//' > "$DST.tmp"
+
+          if [ -f "$DST" ] && diff -q "$DST" "$DST.tmp" > /dev/null 2>&1; then
+            rm "$DST.tmp"
+            echo "en_US source unchanged."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            mv "$DST.tmp" "$DST"
+            echo "en_US source updated."
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Stage locale files and detect changes
-        id: stage
+        id: locales
         shell: bash
         run: |
           set -euo pipefail
@@ -80,32 +109,39 @@ jobs:
             staged_locales+=("$loc")
           done < <(find "$SRC_DIR" -maxdepth 1 -name '*.lang' | sort)
 
-          if [ "${#staged_locales[@]}" -eq 0 ]; then
-            echo "No locale files staged."
-            echo "changed=" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-
           tmp_lock="$RUNNER_TEMP/hbm-locales.lock"
           : > "$tmp_lock"
           changed=()
-          while IFS= read -r loc; do
-            echo "$loc ${newhash[$loc]}" >> "$tmp_lock"
-            old="$(awk -v l="$loc" '$1 == l { print $2 }' "$LOCK" 2>/dev/null || true)"
-            if [ "$old" != "${newhash[$loc]}" ]; then
-              changed+=("$loc")
-            fi
-          done < <(printf '%s\n' "${staged_locales[@]}" | sort)
+          if [ "${#staged_locales[@]}" -gt 0 ]; then
+            while IFS= read -r loc; do
+              echo "$loc ${newhash[$loc]}" >> "$tmp_lock"
+              old="$(awk -v l="$loc" '$1 == l { print $2 }' "$LOCK" 2>/dev/null || true)"
+              if [ "$old" != "${newhash[$loc]}" ]; then
+                changed+=("$loc")
+              fi
+            done < <(printf '%s\n' "${staged_locales[@]}" | sort)
+          fi
 
           printf 'changed=%s\n' "${changed[*]:-}" >> "$GITHUB_OUTPUT"
           echo "Changed locales: ${changed[*]:-none}"
 
       - name: Install Crowdin CLI
-        if: steps.stage.outputs.changed != ''
+        if: steps.source.outputs.changed == 'true' || steps.locales.outputs.changed != ''
         run: npm install -g @crowdin/cli
 
-      - name: Upload changed translations
-        if: steps.stage.outputs.changed != ''
+      # Upload the source first so brand-new en_US keys exist before their translations
+      - name: Upload en_US source to Crowdin
+        if: steps.source.outputs.changed == 'true'
+        env:
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+        run: |
+          crowdin upload sources \
+            -c crowdin-hbm.yml \
+            --no-progress
+
+      - name: Upload changed locale translations to Crowdin
+        if: steps.locales.outputs.changed != ''
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
@@ -114,7 +150,7 @@ jobs:
           set -euo pipefail
 
           DST_DIR="config/txloader/forceload/hbm/lang"
-          read -r -a changed <<< "${{ steps.stage.outputs.changed }}"
+          read -r -a changed <<< "${{ steps.locales.outputs.changed }}"
 
           # Temporarily drop unchanged locale files so only changed ones get uploaded
           for f in "$DST_DIR"/*.properties; do
@@ -132,21 +168,36 @@ jobs:
             --auto-approve-imported \
             --no-progress
 
-      - name: Update lockfile
-        if: steps.stage.outputs.changed != ''
+      - name: Commit and push changes
+        if: steps.source.outputs.changed == 'true' || steps.locales.outputs.changed != ''
         shell: bash
         run: |
           set -euo pipefail
 
-          # Restore the repo-managed locale files removed before upload
-          git checkout -- config
+          LANG_DIR="config/txloader/forceload/hbm/lang"
 
-          cp "$RUNNER_TEMP/hbm-locales.lock" .github/hbm-locales.lock
+          # Commit the en_US source change first (survives the restore below)
+          if [ "${{ steps.source.outputs.changed }}" = "true" ]; then
+            git add "$LANG_DIR/en_US.properties"
+            git commit -m "🌐 Sync hbm en_US source from NTNH mod (spacetravel-two-pointfive)"
+          fi
 
-          git add .github/hbm-locales.lock
-          if git diff --staged --quiet; then
-            echo "Lockfile unchanged."
-          else
-            git commit -m "🔒 Record imported hbm locale hashes"
+          # Restore locale files that were only staged for upload
+          git checkout -- "$LANG_DIR"
+
+          # Record the imported locale hashes
+          if [ -n "${{ steps.locales.outputs.changed }}" ]; then
+            cp "$RUNNER_TEMP/hbm-locales.lock" .github/hbm-locales.lock
+            git add .github/hbm-locales.lock
+            if ! git diff --staged --quiet; then
+              git commit -m "🔒 Record imported hbm locale hashes"
+            fi
+          fi
+
+          git fetch origin main
+          if [ "$(git rev-list --count origin/main..HEAD)" -gt 0 ]; then
+            git rebase origin/main
             git push origin main
+          else
+            echo "Nothing to push."
           fi
