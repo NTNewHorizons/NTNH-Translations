@@ -43,7 +43,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: NTNewHorizons/Hbm-s-Nuclear-Tech-GIT
-          ref: spacetravel-two-pointfive
+          ref: space-travel-twopointfive
           path: hbm-upstream
           token: ${{ secrets.UNIVERSAL_FINE }}
           fetch-depth: 1
