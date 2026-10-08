@@ -183,7 +183,7 @@
           <br />
           <sub><b>Aftobus01</b></sub></a>
         <br />
-        <sub><b>2311 words</b></sub>
+        <sub><b>2320 words</b></sub>
       </td>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/itxv"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17848497/medium/0f7d2fb932135516b0af96f7dfbe9f98.jpg" />
