@@ -10,7 +10,7 @@
           <br />
           <sub><b>Bufka2011</b></sub></a>
         <br />
-        <sub><b>919129 words</b></sub>
+        <sub><b>919287 words</b></sub>
       </td>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/BufkaSecond"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/16895253/medium/0b29547a406506ea79d4bbd68608d6ed.png" />
@@ -357,6 +357,13 @@
         <sub><b>217 words</b></sub>
       </td>
       <td align="center" valign="top">
+        <a href="https://crowdin.com/profile/Tvonvan"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17644946/medium/3d92f36e97cbdfeff82ba88bf007d525.jpg" />
+          <br />
+          <sub><b>Tvonvan</b></sub></a>
+        <br />
+        <sub><b>212 words</b></sub>
+      </td>
+      <td align="center" valign="top">
         <a href="https://crowdin.com/profile/gustawj21"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17808885/medium/41a38de3530925ca564594a43378a165.jpeg" />
           <br />
           <sub><b>Gustaw</b></sub>
@@ -399,6 +406,8 @@
         <br />
         <sub><b>126 words</b></sub>
       </td>
+    </tr>
+    <tr>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/eiko0"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17801663/medium/431999895c7c5b1994f1cc5938f82e72.jpg" />
           <br />
@@ -407,17 +416,6 @@
           <sub><b>(eiko0)</b></sub></a>
         <br />
         <sub><b>120 words</b></sub>
-      </td>
-    </tr>
-    <tr>
-      <td align="center" valign="top">
-        <a href="https://crowdin.com/profile/tiagolima13"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17231268/medium/45c25c8ad3b330434c8adc10eabc7931.jpeg" />
-          <br />
-          <sub><b>Tiago Lima</b></sub>
-          <br />
-          <sub><b>(tiagolima13)</b></sub></a>
-        <br />
-        <sub><b>118 words</b></sub>
       </td>
     </tr>
   </tbody>
