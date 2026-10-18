@@ -364,6 +364,15 @@
         <sub><b>212 words</b></sub>
       </td>
       <td align="center" valign="top">
+        <a href="https://crowdin.com/profile/igrok123"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17943833/medium/1291f476a7b99f20c5141680d5517656.png" />
+          <br />
+          <sub><b>Stabay</b></sub>
+          <br />
+          <sub><b>(igrok123)</b></sub></a>
+        <br />
+        <sub><b>175 words</b></sub>
+      </td>
+      <td align="center" valign="top">
         <a href="https://crowdin.com/profile/gustawj21"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17808885/medium/41a38de3530925ca564594a43378a165.jpeg" />
           <br />
           <sub><b>Gustaw</b></sub>
@@ -397,6 +406,8 @@
         <br />
         <sub><b>127 words</b></sub>
       </td>
+    </tr>
+    <tr>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/Alex6_"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/14881780/medium/b951ed53df012b560385ee8b96e8af2d.jpg" />
           <br />
@@ -405,17 +416,6 @@
           <sub><b>(Alex6_)</b></sub></a>
         <br />
         <sub><b>126 words</b></sub>
-      </td>
-    </tr>
-    <tr>
-      <td align="center" valign="top">
-        <a href="https://crowdin.com/profile/eiko0"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17801663/medium/431999895c7c5b1994f1cc5938f82e72.jpg" />
-          <br />
-          <sub><b>Diko Ahlo</b></sub>
-          <br />
-          <sub><b>(eiko0)</b></sub></a>
-        <br />
-        <sub><b>120 words</b></sub>
       </td>
     </tr>
   </tbody>
