@@ -10,7 +10,7 @@
           <br />
           <sub><b>Bufka2011</b></sub></a>
         <br />
-        <sub><b>919287 words</b></sub>
+        <sub><b>920346 words</b></sub>
       </td>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/BufkaSecond"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/16895253/medium/0b29547a406506ea79d4bbd68608d6ed.png" />
@@ -24,7 +24,7 @@
           <br />
           <sub><b>igrokkk_</b></sub></a>
         <br />
-        <sub><b>24720 words</b></sub>
+        <sub><b>37858 words</b></sub>
       </td>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/GamerRabbit22"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17800493/medium/3dbe0ae2f49f1047180c8b2511069764.png" />
@@ -67,7 +67,7 @@
           <br />
           <sub><b>(imnotdonat1k)</b></sub></a>
         <br />
-        <sub><b>4682 words</b></sub>
+        <sub><b>5622 words</b></sub>
       </td>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/AdUhTkJm"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17757327/medium/918854712a4e8aa172ca9a61537e7f26.png" />
@@ -202,6 +202,13 @@
         <sub><b>868 words</b></sub>
       </td>
       <td align="center" valign="top">
+        <a href="https://crowdin.com/profile/Tvonvan"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17644946/medium/3d92f36e97cbdfeff82ba88bf007d525.jpg" />
+          <br />
+          <sub><b>Tvonvan</b></sub></a>
+        <br />
+        <sub><b>785 words</b></sub>
+      </td>
+      <td align="center" valign="top">
         <a href="https://crowdin.com/profile/Dorito64"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17661920/medium/57974a2732c0aa9e8be92407e026a8b5.gif" />
           <br />
           <sub><b>Dorito Loco</b></sub>
@@ -227,13 +234,6 @@
           <sub><b>(Q-Cold)</b></sub></a>
         <br />
         <sub><b>693 words</b></sub>
-      </td>
-      <td align="center" valign="top">
-        <a href="https://crowdin.com/profile/Tvonvan"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17644946/medium/3d92f36e97cbdfeff82ba88bf007d525.jpg" />
-          <br />
-          <sub><b>Tvonvan</b></sub></a>
-        <br />
-        <sub><b>674 words</b></sub>
       </td>
     </tr>
     <tr>
