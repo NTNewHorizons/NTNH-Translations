@@ -24,7 +24,7 @@
           <br />
           <sub><b>igrokkk_</b></sub></a>
         <br />
-        <sub><b>37858 words</b></sub>
+        <sub><b>37867 words</b></sub>
       </td>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/GamerRabbit22"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17800493/medium/3dbe0ae2f49f1047180c8b2511069764.png" />
