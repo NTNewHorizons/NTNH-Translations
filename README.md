@@ -24,7 +24,7 @@
           <br />
           <sub><b>igrokkk_</b></sub></a>
         <br />
-        <sub><b>37867 words</b></sub>
+        <sub><b>37929 words</b></sub>
       </td>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/GamerRabbit22"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17800493/medium/3dbe0ae2f49f1047180c8b2511069764.png" />
@@ -67,7 +67,7 @@
           <br />
           <sub><b>(imnotdonat1k)</b></sub></a>
         <br />
-        <sub><b>5622 words</b></sub>
+        <sub><b>5727 words</b></sub>
       </td>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/AdUhTkJm"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17757327/medium/918854712a4e8aa172ca9a61537e7f26.png" />
