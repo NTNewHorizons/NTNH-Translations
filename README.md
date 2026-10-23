@@ -17,7 +17,7 @@
           <br />
           <sub><b>BufkaSecond</b></sub></a>
         <br />
-        <sub><b>203803 words</b></sub>
+        <sub><b>204822 words</b></sub>
       </td>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/igrokkk_"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17943833/medium/212702a60357b1b0ca5a109a938a9013.jpg" />
