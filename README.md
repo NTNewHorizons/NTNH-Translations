@@ -84,6 +84,15 @@
         <sub><b>3079 words</b></sub>
       </td>
       <td align="center" valign="top">
+        <a href="https://crowdin.com/profile/serafim719"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17949569/medium/4c717003cbae95950f884af95fe33ad9.jpeg" />
+          <br />
+          <sub><b>Зачем Вам</b></sub>
+          <br />
+          <sub><b>(serafim719)</b></sub></a>
+        <br />
+        <sub><b>6018 words</b></sub>
+      </td>
+      <td align="center" valign="top">
         <a href="https://crowdin.com/profile/Astu_c"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17790049/medium/68ee496cd387db7874ec66fee25c6129_default.png" />
           <br />
           <sub><b>Astu_c</b></sub></a>
@@ -106,6 +115,8 @@
         <br />
         <sub><b>2352 words</b></sub>
       </td>
+    </tr>
+    <tr>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/Scumbrt"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17781689/medium/803ed2c55c1f11c1bbce3631395beea0.png" />
           <br />
@@ -113,8 +124,6 @@
         <br />
         <sub><b>1765 words</b></sub>
       </td>
-    </tr>
-    <tr>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/chusatkovv"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17788095/medium/c6287fe1974b757ee1190d016c391e2b.png" />
           <br />
@@ -148,15 +157,6 @@
           <sub><b>(Trkemal67)</b></sub></a>
         <br />
         <sub><b>1363 words</b></sub>
-      </td>
-      <td align="center" valign="top">
-        <a href="https://crowdin.com/profile/serafim719"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17949569/medium/4c717003cbae95950f884af95fe33ad9.jpeg" />
-          <br />
-          <sub><b>Зачем Вам</b></sub>
-          <br />
-          <sub><b>(serafim719)</b></sub></a>
-        <br />
-        <sub><b>2566 words</b></sub>
       </td>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/Daxtarah"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17783017/medium/d7511b473da842d2fbf482be32a33b91.png" />
