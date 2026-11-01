@@ -61,6 +61,15 @@
     </tr>
     <tr>
       <td align="center" valign="top">
+        <a href="https://crowdin.com/profile/serafim719"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17949569/medium/4c717003cbae95950f884af95fe33ad9.jpeg" />
+          <br />
+          <sub><b>Зачем Вам</b></sub>
+          <br />
+          <sub><b>(serafim719)</b></sub></a>
+        <br />
+        <sub><b>12641 words</b></sub>
+      </td>
+      <td align="center" valign="top">
         <a href="https://crowdin.com/profile/imnotdonat1k"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/16737111/medium/39ec062e0d2078eb4fcd9feabf8c343f.jpg" />
           <br />
           <sub><b>donatik</b></sub>
@@ -68,15 +77,6 @@
           <sub><b>(imnotdonat1k)</b></sub></a>
         <br />
         <sub><b>5727 words</b></sub>
-      </td>
-      <td align="center" valign="top">
-        <a href="https://crowdin.com/profile/serafim719"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17949569/medium/4c717003cbae95950f884af95fe33ad9.jpeg" />
-          <br />
-          <sub><b>Зачем Вам</b></sub>
-          <br />
-          <sub><b>(serafim719)</b></sub></a>
-        <br />
-        <sub><b>9139 words</b></sub>
       </td>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/AdUhTkJm"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17757327/medium/918854712a4e8aa172ca9a61537e7f26.png" />
