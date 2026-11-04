@@ -67,7 +67,7 @@
           <br />
           <sub><b>(serafim719)</b></sub></a>
         <br />
-        <sub><b>15240 words</b></sub>
+        <sub><b>15575 words</b></sub>
       </td>
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/imnotdonat1k"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/16737111/medium/39ec062e0d2078eb4fcd9feabf8c343f.jpg" />
