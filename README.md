@@ -2,23 +2,12 @@
 <div align="center">
   <h2>🌟 Our Wonderful Translation Contributors 🌟</h2>
   
-<table>
+
+<table style="margin-left: auto; margin-right: auto;">
   <tbody>
     <tr>
-      <td align="center" valign="top">
-        <a href="https://crowdin.com/profile/Bufka2011"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17417020/medium/3c15ae1cff5f26990911b1782ed75f63.png" />
-          <br />
-          <sub><b>Bufka2011</b></sub></a>
-        <br />
-        <sub><b>967633 words</b></sub>
-      </td>
-      <td align="center" valign="top">
-        <a href="https://crowdin.com/profile/BufkaSecond"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/16895253/medium/0b29547a406506ea79d4bbd68608d6ed.png" />
-          <br />
-          <sub><b>BufkaSecond</b></sub></a>
-        <br />
-        <sub><b>209810 words</b></sub>
-      </td>
+      
+      
       <td align="center" valign="top">
         <a href="https://crowdin.com/profile/igrokkk_"><img alt="logo" style="width: 50px" src="https://crowdin-static.cf-downloads.crowdin.com/avatar/17943833/medium/212702a60357b1b0ca5a109a938a9013.jpg" />
           <br />
@@ -416,6 +405,7 @@
     </tr>
   </tbody>
 </table>
+
 </div>
 <!-- CROWDIN_CONTRIBUTORS_END -->
 
